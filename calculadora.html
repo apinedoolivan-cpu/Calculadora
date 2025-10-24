@@ -1,143 +1,230 @@
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
-        <style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <style>
+      :root {
+        --verde-claro: #e4f3e0;
+        --verde-medio: #9fd89f;
+        --verde-oscuro: #2f6f4e;
+        --verde-sombra: #174a33;
+        --blanco-transp: rgba(255, 255, 255, 0.9);
+        --texto: #1e2f23;
+        --max-width: 600px;
+      }
 
-            :root {
-            --verde-claro: #e4f3e0;
-            --verde-medio: #9fd89f;
-            --verde-oscuro: #2f6f4e;
-            --verde-sombra: #174a33;
-            --blanco-transp: rgba(255, 255, 255, 0.9);
-            --texto: #1e2f23;
-            --max-width: 900px;
-            }
+      body {
+        font-family: "Segoe UI", "Poppins", sans-serif;
+        margin: 0;
+        padding: 40px 20px;
+        color: var(--texto);
+        background: linear-gradient(
+          135deg,
+          var(--verde-claro) 0%,
+          var(--verde-medio) 50%,
+          var(--verde-oscuro) 100%
+        );
+        display: flex;
+        justify-content: center;
+        min-height: 100vh;
+        background-attachment: fixed;
+      }
 
-            body {
-            font-family: "Segoe UI", "Poppins", sans-serif;
-            margin: 0;
-            padding: 40px 20px;
-            color: var(--texto);
-            background: linear-gradient(135deg, var(--verde-claro) 0%, var(--verde-medio) 50%, var(--verde-oscuro) 100%);
-            display: flex;
-            justify-content: center;
-            min-height: 100vh;
-            background-attachment: fixed;
-            
-            }
+      .container {
+        background: var(--blanco-transp);
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        padding: 40px;
+        max-width: var(--max-width);
+        width: 100%;
+        backdrop-filter: blur(5px);
+      }
 
-            .container {
-            background: var(--blanco-transp);
-            border-radius: 15px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-            padding: 40px;
-            max-width: var(--max-width);
-            width: 100%;
-            backdrop-filter: blur(5px);
-            }
+      header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        text-align: center;
+        margin-bottom: 30px;
+      }
 
-            header {
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-            gap: 20px;
-            text-align: center;
-            margin-bottom: 30px;
-            }
+      .header-image {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50px;
+        border: 4px solid #174a33;
+        display: block;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+      }
 
-            .header-image {
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 50px;
-            border: 4px solid #174a33;
-            display: block;
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-            }
+      h1 {
+        font-size: 2rem;
+        color: var(--verde-sombra);
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
 
-            h1 {
-            font-size: 2rem;
-            color: var(--verde-sombra);
-            margin-bottom: 10px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            }
+      .subtitle {
+        font-size: 1rem;
+        color: #355b41;
+        font-style: italic;
+        margin: 0;
+      }
 
-            .subtitle {
-            font-size: 1rem;
-            color: #355b41;
-            font-style: italic;
-            margin: 0;
-            }
+      article {
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
 
-            article {
-            background-color: rgba(255, 255, 255, 0.7);
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            }
+      footer {
+        text-align: right;
+        font-size: 0.9rem;
+        margin-top: 25px;
+        color: var(--verde-sombra);
+        opacity: 0.8;
+      }
 
+      .calculadora {
+        max-width: 400px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
 
-            footer {
-            text-align: right;
-            font-size: 0.9rem;
-            margin-top: 25px;
-            color: var(--verde-sombra);
-            opacity: 0.8;
-            }
-        </style> 
-    </head>
-    <body>
-        <div class="container">
-            <header>
-                <img 
-                    src="https://img.freepik.com/vector-gratis/simbolos-matematicos-dibujados-mano_23-2148779488.jpg?semt=ais_hybrid&w=740&q=80" 
-                    width = "200px" height="200px"
-                    alt="numeros" 
-                    class="header-image">
-                <div>
-                    <h1>Calculadora</h1>
-                    <p class="subtitle">Proyecto de calculadora</p>
-                </div>
-            </header>
+      .pantalla {
+        background: #f0f8f2;
+        border: 2px solid var(--verde-sombra);
+        border-radius: 10px;
+        padding: 15px;
+        text-align: right;
+        color: var(--texto);
+        box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
 
-            <article class="calculadora">
-                <div clas="resultado">
-                </div>
-                <div clas="numero1">1
-                </div>
-                <div clas="numero2">2
-                </div>
-                <div clas="numero3">3
-                </div>
-                <div clas="numero4">4
-                </div>
-                <div clas="numero5">5
-                </div>
-                <div clas="numero6">6
-                </div>
-                <div clas="numero7">7
-                </div>
-                <div clas="numero8">8
-                </div>
-                <div clas="numero9">9
-                </div>
-                <div clas="numero0">0
-                </div>
-                <div clas="signo+">+
-                </div>
-                <div clas="signo-">-
-                </div>
-                <div clas="signo*">*
-                </div>
-                <div clas="signo/">/
-                </div>
-            </article>
-            <footer>
-            <small>Calculadora</small>
-            </footer>
+      .operaciones {
+        font-size: 0.9rem;
+        color: rgba(0, 0, 0, 0.5);
+        margin-bottom: 5px;
+      }
+
+      .resultado {
+        font-size: 2rem;
+        font-weight: bold;
+        color: var(--verde-sombra);
+      }
+
+      .teclado {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        gap: 10px;
+      }
+
+      button {
+        background: var(--verde-medio);
+        border: none;
+        border-radius: 8px;
+        padding: 15px;
+        font-size: 1.1rem;
+        color: var(--texto);
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+        transition: all 0.2s;
+      }
+
+      button:hover {
+        background: var(--verde-oscuro);
+        color: white;
+        transform: translateY(-2px);
+      }
+
+      button#igual {
+        background: var(--verde-sombra);
+        color: white;
+      }
+
+      button#igual:hover {
+        background: #103823;
+      }
+
+      .operador {
+        background: #d3ead2;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <img
+          src="https://img.freepik.com/vector-gratis/simbolos-matematicos-dibujados-mano_23-2148779488.jpg?semt=ais_hybrid&w=740&q=80"
+          width="200px"
+          height="200px"
+          alt="numeros"
+          class="header-image"
+        />
+        <div>
+          <h1>Calculadora</h1>
+          <p class="subtitle">Proyecto de calculadora</p>
         </div>
-    </body>
+      </header>
+
+      <article class="calculadora">
+        <div class="pantalla">
+          <div class="operaciones" id="operaciones">2+</div>
+          <div class="resultado" id="resultado">4</div>
+        </div>
+
+        <div class="teclado">
+          <!-- FILA 1 -->
+          <button id="porcentaje">%</button>
+          <button id="borrar-operaciones">CE</button>
+          <button id="borrar-todo">C</button>
+          <button id="borrar-uno">⌫</button>
+
+          <!-- FILA 2 -->
+          <button id="elevar">xʸ</button>
+          <button id="elevar2">x²</button>
+          <button id="raiz">√</button>
+          <button class="operador">÷</button>
+
+          <!-- FILA 3 -->
+          <button class="numero">7</button>
+          <button class="numero">8</button>
+          <button class="numero">9</button>
+          <button class="operador">*</button>
+
+          <!-- FILA 4 -->
+          <button class="numero">4</button>
+          <button class="numero">5</button>
+          <button class="numero">6</button>
+          <button class="operador">-</button>
+
+          <!-- FILA 5 -->
+          <button class="numero">1</button>
+          <button class="numero">2</button>
+          <button class="numero">3</button>
+          <button class="operador">+</button>
+
+          <!-- FILA 6 -->
+          <button id="negativo">+/-</button>
+          <button class="numero">0</button>
+          <button id="coma">,</button>
+          <button id="igual">=</button>
+        </div>
+      </article>
+
+      <footer>
+        <small>Calculadora</small>
+      </footer>
+    </div>
+  </body>
 </html>
