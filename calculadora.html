@@ -1,0 +1,143 @@
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <style>
+
+            :root {
+            --verde-claro: #e4f3e0;
+            --verde-medio: #9fd89f;
+            --verde-oscuro: #2f6f4e;
+            --verde-sombra: #174a33;
+            --blanco-transp: rgba(255, 255, 255, 0.9);
+            --texto: #1e2f23;
+            --max-width: 900px;
+            }
+
+            body {
+            font-family: "Segoe UI", "Poppins", sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            color: var(--texto);
+            background: linear-gradient(135deg, var(--verde-claro) 0%, var(--verde-medio) 50%, var(--verde-oscuro) 100%);
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+            background-attachment: fixed;
+            
+            }
+
+            .container {
+            background: var(--blanco-transp);
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            padding: 40px;
+            max-width: var(--max-width);
+            width: 100%;
+            backdrop-filter: blur(5px);
+            }
+
+            header {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            gap: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            }
+
+            .header-image {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50px;
+            border: 4px solid #174a33;
+            display: block;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            }
+
+            h1 {
+            font-size: 2rem;
+            color: var(--verde-sombra);
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            }
+
+            .subtitle {
+            font-size: 1rem;
+            color: #355b41;
+            font-style: italic;
+            margin: 0;
+            }
+
+            article {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            }
+
+
+            footer {
+            text-align: right;
+            font-size: 0.9rem;
+            margin-top: 25px;
+            color: var(--verde-sombra);
+            opacity: 0.8;
+            }
+        </style> 
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <img 
+                    src="https://img.freepik.com/vector-gratis/simbolos-matematicos-dibujados-mano_23-2148779488.jpg?semt=ais_hybrid&w=740&q=80" 
+                    width = "200px" height="200px"
+                    alt="numeros" 
+                    class="header-image">
+                <div>
+                    <h1>Calculadora</h1>
+                    <p class="subtitle">Proyecto de calculadora</p>
+                </div>
+            </header>
+
+            <article class="calculadora">
+                <div clas="resultado">
+                </div>
+                <div clas="numero1">1
+                </div>
+                <div clas="numero2">2
+                </div>
+                <div clas="numero3">3
+                </div>
+                <div clas="numero4">4
+                </div>
+                <div clas="numero5">5
+                </div>
+                <div clas="numero6">6
+                </div>
+                <div clas="numero7">7
+                </div>
+                <div clas="numero8">8
+                </div>
+                <div clas="numero9">9
+                </div>
+                <div clas="numero0">0
+                </div>
+                <div clas="signo+">+
+                </div>
+                <div clas="signo-">-
+                </div>
+                <div clas="signo*">*
+                </div>
+                <div clas="signo/">/
+                </div>
+            </article>
+            <footer>
+            <small>Calculadora</small>
+            </footer>
+        </div>
+    </body>
+</html>
