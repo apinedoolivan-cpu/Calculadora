@@ -1,0 +1,72 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="styles.scss" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <img
+          src="https://img.freepik.com/vector-gratis/simbolos-matematicos-dibujados-mano_23-2148779488.jpg?semt=ais_hybrid&w=740&q=80"
+          width="200px"
+          height="200px"
+          alt="numeros"
+          class="header-image"
+        />
+        <div>
+          <h1>Calculadora</h1>
+          <p class="subtitle">Proyecto de calculadora por Alex Pinedo</p>
+        </div>
+      </header>
+
+      <article class="calculadora">
+        <div class="pantalla">
+          <div class="operaciones" id="operaciones">&nbsp;</div>
+          <div class="resultado" id="resultado">0</div>
+        </div>
+
+        <div class="teclado">
+          <button id="borrar-operaciones">CE</button>
+          <button id="borrar-todo">C</button>
+          <button id="borrar-uno">⌫</button>
+          <button class="operador">^</button>
+
+          <button id="porcentaje">%</button>
+          <button id="elevar2">x²</button>
+          <button id="raiz">√</button>
+          <button class="operador">/</button>
+
+          <button class="numero">7</button>
+          <button class="numero">8</button>
+          <button class="numero">9</button>
+          <button class="operador">*</button>
+
+          <button class="numero">4</button>
+          <button class="numero">5</button>
+          <button class="numero">6</button>
+          <button class="operador">-</button>
+
+          <button class="numero">1</button>
+          <button class="numero">2</button>
+          <button class="numero">3</button>
+          <button class="operador">+</button>
+
+          <button id="negativo">+/-</button>
+          <button class="numero">0</button>
+          <button id="coma">,</button>
+          <button id="igual">=</button>
+        </div>
+      </article>
+
+      <footer>
+        <small>Límite de dígitos : 20</small>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
