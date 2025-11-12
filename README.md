@@ -1,20 +1,23 @@
 # Calculadora Web
 
-Este proyecto es una **calculadora web** desarrollada utilizando **HTML**, **CSS** y **JavaScript**. La calculadora permite realizar operaciones matemáticas básicas como suma, resta, multiplicación y división, ofreciendo una interfaz sencilla y funcional.
+Este proyecto es una **calculadora web** desarrollada utilizando **HTML**, **CSS** y **JavaScript**. La calculadora permite realizar operaciones matemáticas básicas como suma, resta, multiplicación y división, ofreciendo una interfaz sencilla y funcional. Además, incluye **funcionalidades dinámicas implementadas con JavaScript**, como manejo de eventos de botones y cálculo en tiempo real.
 
 ## Características
 
 * Interfaz interactiva y fácil de usar.
-* Soporta operaciones básicas: suma (+), resta (-), multiplicación (×), división (÷).
+* Soporta operaciones básicas: suma (+), resta (-), multiplicación (×), división (÷) y potencia(^).
 * Manejo de decimales.
 * Botón de limpiar (C) para reiniciar la calculadora.
+* Funcionalidad de raiz, porcentaje y manejo de errores implementadas.
 * Diseño responsivo adaptable a diferentes tamaños de pantalla.
+* Estilos css sencillos.
 
 ## Tecnologías utilizadas
 
 * **HTML5**: Estructura de la calculadora.
 * **CSS3**: Estilos y diseño visual.
-* **JavaScript**: Lógica de cálculo y manejo de eventos.
+* **SASS**: Estilos mas elaborados y responsivos.
+* **JavaScript**: Lógica de cálculo, manejo de eventos y funcionalidades interactivas.
 
 ## Estructura del proyecto
 
@@ -23,7 +26,7 @@ calculadora-js/
 │
 ├── index.html       # Archivo principal HTML
 ├── style.css        # Estilos de la calculadora
-└── script.js        # Lógica de la calculadora
+└── script.js        # Lógica de la calculadora y funcionalidades dinámicas
 ```
 
 ## Instalación y uso
@@ -53,6 +56,6 @@ calculadora-js/
 
 Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
 
-## Captura
-
-![Captura de la calculadora](ruta-a-tu-imagen.png)
+👨‍💻 Autor: Alejandro Pinedo
+📧 Contacto: apinedoolivan@gmail.com
+🌐 GitHub: @apinedoolivan-cpu
